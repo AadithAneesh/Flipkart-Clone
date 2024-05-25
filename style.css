@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+     height: 100vh;
+     width: 100vw;
+     margin: 0;
+     font-family: "Inter";
+     background: #EFF1F4;
+     cursor: default;
+     user-select: none;
+}
+::-webkit-scrollbar{display: none;}
+/* COMMON CLASSES */
+
+.flex{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.title{
+     margin-bottom: 2.5vh;
+     font-size: 1.5vw;
+     font-weight: bold;
+}
+.dropper:hover .arr{
+     rotate: 180deg;
+     transition: all 0.5s ease;
+}
+.hover:hover{
+     cursor: pointer;
+     color: orange;
+}
+
+/*  */
+.nav{
+     width: 95vw;
+     padding: 0px 2.5vw;
+     height: 10vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background: white;
+}
+.search{margin: 0 2.5vw;}
+input::placeholder{font-size: 1.25vw;}
+.search input{
+     font-family: 'Inter';
+     outline: none;
+     width: 40vw;
+     height: 5.5vh;
+     text-indent: 2.5vw;
+     background: #7fffd426;
+     border: none;
+     border-radius: 0.5vw;
+}
+.search::before{
+     content: '';
+     position: absolute;
+     top: 5%;
+     left: 18%;
+     transform: translate(-50%, -50%);
+     background: url(assets/imgsvg/search.svg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     height: 2.5%;
+     width: 1.3%;
+}
+.login, .cart, .sell{gap: 0.6vw;}
+.action-buttons{
+     gap: 3vw;
+     width: 100%;
+     font-size: 1.2vw;
+}
+/*  */
+.display{
+     background: white;
+     height: 15vh;
+     margin: 2vh 1vw 1vh;
+     padding: 1vh 2vw;
+     width: 94vw;
+     justify-content: space-evenly;
+}
+.tile{
+     flex-direction: column;
+     font-size: 1vw;
+     font-weight: bold;
+     color: #333;
+     gap: 2vh;
+}
+.caro{
+     margin-top: 2.75vh;margin-left: 1vw;
+     width: 98vw;
+     height: 35vh;
+     overflow: hidden;
+}
+.slider{
+     display: flex;
+     animation: slide 10s ease infinite;
+}
+.slider img{
+     width: 100vw;
+     height: 50vh;
+     object-fit: cover;
+     object-position: center center;
+     transform: translateY(-5vh);
+}
+@keyframes slide {
+     0%{
+          transform: translateX(0vw);
+     }
+     20%{
+          transform: translateX(-100vw);
+     }
+     40%{
+          transform: translateX(-200vw);
+     }
+     60%{
+          transform: translateX(-300vw);
+     }
+     80%{
+          transform: translateX(-400vw);
+     }
+}
+.products{
+     margin: 0.75vh 1vw;
+     min-height: 100vh;
+     width: 98vw;
+     overflow: hidden;
+}
+.electronics, .bftm, .appliances{
+     margin-top: 2vh;
+     display: flex;
+     flex-direction: column;
+     gap: 2vh;
+     padding: 3vh 1.5vw;
+     width: 100%;
+     height: 45vh;
+     background: white;
+}
+.items{
+     height: 97%;
+     width: 97%;
+     gap: 1vw;
+     justify-content: space-between;
+}
+.item{
+     height: 98%;
+     padding: 1% 0;
+     width: 20%;
+     background-image: url(assets/imgsvg/p1.jpg);
+     background-size: 90% 80%;
+     background-position: center 10%;
+     background-repeat: no-repeat;
+     border: 0.15vw solid rgba(128, 128, 128, 0.25);
+     border-radius: 0.2vw;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     flex-direction: column;
+}
+.item:hover{background-size: 95% 85%;}
+.price{font-weight: bold;background: white; font-size: 1vw;}
+.name{background: white;width: 100%;text-align: center; font-size: 1vw;}
+.end{
+     margin-top: 10vh;
+     width: 100vw;
+     height: 35vh;
+     background: #222;
+     color: white;text-align: center;
+     font-size: 2vw;
+}
+/* END */

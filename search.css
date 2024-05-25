@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+     height: 100vh;
+     width: 100vw;
+     margin: 0;
+     font-family: "Inter";
+     background: #EFF1F4;
+     cursor: default;
+     user-select: none;
+}
+::-webkit-scrollbar{display: none;}
+
+/* COMMON CLASSES */
+
+.flex{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.title{
+     margin-bottom: 2.5vh;
+     font-size: 1.5vw;
+     font-weight: bold;
+}
+.dropper:hover .arr{
+     rotate: 180deg;
+     transition: all 0.5s ease;
+}
+.invert img{filter: invert();}
+.hover:hover{
+     cursor: pointer;
+     color: orange;
+}
+
+/*  */
+
+.logo{
+     line-height: 0.85;
+     margin: 0 -2vw 0 11vw;
+     font-size: 0.725vw;
+     font-weight: 500;
+     font-style: italic;
+}
+
+.nav{
+     width: 95vw;
+     padding: 0px 2.5vw;
+     height: 8vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: #2874F0;
+     color: white;
+     font-weight: bold;
+}
+.search{margin: 0 1.5vw 0 3vw;}
+input::placeholder{font-size: 0.9vw;}
+
+.search input{
+     font-family: 'Inter';
+     outline: none;
+     width: 32.5vw;
+     height: 5vh;
+     text-indent: 1vw;
+     background: white;
+     border: none;
+     overflow: hidden;
+     font-size: 1vw;
+}
+.search img{
+     width: 1.35vw;
+     position: absolute;
+     top: 4.1%;
+     left: 51%;
+     transform: translate(-50%, -50%);
+     background: white;
+     padding: 0.5vh 0.9vw;
+}
+.login{
+     background: white;
+     padding: 0.85vh 2.75vw;
+     color: #2874F0;
+}
+.options{gap: 0.5vw;}
+
+.action-buttons{
+     margin-right: 10vw;
+     gap: 3vw;
+     width: 40%;
+     font-size: 1vw;
+}
+/*  */
+.bar{
+     width: 100vw;
+     height: 6vh;
+     background: white;
+     border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+}
+.categories{
+     width: 97%;
+     justify-content: space-evenly;
+     font-weight: 600;
+     font-size: 0.95vw;
+}
+/*  */
+.prpge{
+     width: 98vw;
+     height: 70vh;
+     margin: 2vh 1vw;
+     display: flex;
+     justify-content: space-between;
+}
+.filters{
+     width: 18%;
+     height: 6%;
+     background: white;
+     padding: 1.5vh 1vw;
+     font-size: 1.5vw;
+     font-weight: 500;
+     border-bottom: 1px solid rgba(153, 153, 153, 0.35);
+}
+.product{
+     width: 79.2%;
+     height: 50%;
+     background: white;
+     border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+}
+.results{
+     font-size: 2vw;
+     font-weight: 500;
+     width: 100%;
+     height: 18%;
+}
+#result{position: relative;top: 2vh;left: 1vw;}
+.end{
+     margin-top: 10vh;
+     width: 100vw;
+     height: 35vh;
+     background: #222;
+     color: white;text-align: center;
+     font-size: 2vw;
+}
+/* end */

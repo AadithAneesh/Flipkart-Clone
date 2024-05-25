@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="search.css">
+     <link rel="shortcut icon" href="assets/imgsvg/title.png" type="image/x-icon">
+     <script src="app.js" defer></script>
+     <title>Document</title>
+</head>
+<body>
+
+     <div class="nav" style="">
+
+          <div class="logo">
+              <a href="index.html"><img src="assets/imgsvg/logo.png" style="width: 5.5vw;"></a> <br> 
+               Explore <span style="color: #F4DF0C;">Plus</span>
+               <img src="assets/imgsvg/plus.png" alt="" style="width: 0.8vw;">
+          </div>
+
+          <div class="search flex">
+               <input type="text" placeholder="Search for Products, Brands and More" id="inp" autocomplete="off" spellcheck="false">
+               <img src="assets/imgsvg/srchbl.png" alt="" srcset="" width="10vw">
+          </div>
+     
+          <div class="action-buttons flex">
+     
+               <div class="login flex dropper hover">
+                    Login
+               </div>
+               <div class="cart flex hover">
+                    Become a Seller
+               </div>
+               <div class="sell flex invert dropper hover">
+                    More<img src="assets/imgsvg/arrow.svg" alt="" style="width: .9vw;" class="arr">
+               </div>
+               <div class="options flex invert hover">
+                   <img src="assets/imgsvg/cart.svg" alt="" style="width: 2vw;"> Cart
+               </div>
+     
+          </div>
+     
+     </div>
+     <div class="bar flex"> 
+          <div class="categories flex">
+               <div class="tile dropper hover">Electronics<img src="assets/imgsvg/arrow.svg" alt="" style="width: .9vw;" class="arr"></div>
+               <div class="tile dropper hover">TVs & Appliances<img src="assets/imgsvg/arrow.svg" alt="" style="width: .9vw;" class="arr"></div>
+               <div class="tile dropper hover">Men<img src="assets/imgsvg/arrow.svg" alt="" style="width: .9vw;" class="arr"></div>
+               <div class="tile dropper hover">Women<img src="assets/imgsvg/arrow.svg" alt="" style="width: .9vw;" class="arr"></div>
+               <div class="tile dropper hover">Baby & Kids<img src="assets/imgsvg/arrow.svg" alt="" style="width: .9vw;" class="arr"></div>
+               <div class="tile dropper hover">Home & Furniture<img src="assets/imgsvg/arrow.svg" alt="" style="width: .9vw;" class="arr"></div>
+               <div class="tile dropper hover">Sports, Books & More<img src="assets/imgsvg/arrow.svg" alt="" style="width: .9vw;" class="arr"></div>
+               <div class="tile dropper hover">Flights</div>
+               <div class="tile dropper hover">Offer Zone</div>
+          </div>
+     </div>
+     <div class="prpge">
+          <div class="filters">Filters</div>
+          <div class="product">
+               <div class="results" id="results"><div id="result"></div></div>
+          </div>
+     </div>
+     <div class="end flex">FlipKlone© <br> By Sir Eeper The I™</div>
+     <script>
+          const result = document.getElementById('result')
+          document.addEventListener('DOMContentLoaded', function(){
+               result.innerHTML = `Sorry, 0 out of 0 results for "${window.localStorage.getItem('search')}"`
+               document.title = `${window.localStorage.getItem('search')} - Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!`
+          })
+     </script>
+</body>
+</html>
